@@ -3,146 +3,318 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="DP Segurança - Serviços de segurança e vigilância patrimonial personalizados para condomínios, empresas e propriedades." />
-        <title>DP - Segurança e Vigilância Patrimonial</title>
+        <meta name="description" content="DP Vigilância Patrimonial - Serviços de segurança e vigilância patrimonial personalizados para condomínios, empresas e propriedades." />
+        
+        <!-- Meta tags para redes sociais -->
+        <meta property="og:title" content="DP Vigilância Patrimonial" />
+        <meta property="og:description" content="Serviços de segurança e vigilância patrimonial personalizados para condomínios, empresas e propriedades." />
+        <meta property="og:image" content="./src/assets/images/logo.png" />
+        <meta property="og:url" content="https://dpvigilanciapatrimonial.com.br" />
+        <meta name="twitter:card" content="summary_large_image" />
+        
+        <title>DP Vigilância Patrimonial</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
         <link rel="shortcut icon" href="./src/assets/images/logo.png" type="image/x-icon">
-        <style>
-          
-        </style>
+        <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
-        <header class="hero-section">
-            <img class="logo-placeholder" src="./src/assets/images/logo.png" />
-            <h1>DP - Segurança e Vigilância Patrimonial</h1>
-            <p>Proteção completa para condomínios, empresas e propriedades com serviços personalizados e altamente profissionais.</p>
-            <a href="#contato" class="btn btn-light mt-3">Solicitar Orçamento</a>
-        </header>
-
-        <section class="presentation-section container">
-            <div class="text-center mb-5">
-                <h2 style="color: #b6aa5e">Quem somos</h2>
-                <p class="card-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+        <!-- Menu de navegação fixo -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./src/assets/images/logo.png" alt="Logo DP Vigilância Patrimonial" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quem-somos">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficios">Benefícios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </nav>
 
-        <section class="services-section container">
-            <div class="text-center mb-5">
-                <h2 style="color: #b6aa5e">Nossos Serviços</h2>
-                <p class="card-text">Conheça as soluções que oferecemos para garantir a sua tranquilidade.</p>
-            </div>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Segurança para Condomínios" />
-                        <div class="card-body">
-                            <h5 class="card-title">Segurança para Condomínios</h5>
-                            <p class="card-text">Monitoramento 24/7 com profissionais treinados para controle de acesso e prevenção de incidentes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Segurança Privada" />
-                        <div class="card-body">
-                            <h5 class="card-title">Segurança Privada</h5>
-                            <p class="card-text">Proteção especializada para executivos e residências.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Serviços de Portaria" />
-                        <div class="card-body">
-                            <h5 class="card-title">Portaria e Controle de Acesso</h5>
-                            <p class="card-text">Gestão eficiente de visitantes com controle tecnológico e presencial.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Monitoramento e Vigilância" />
-                        <div class="card-body">
-                            <h5 class="card-title">Monitoramento e Vigilância</h5>
-                            <p class="card-text">Soluções com tecnologia de ponta para vigilância remota e local.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Resposta Rápida" />
-                        <div class="card-body">
-                            <h5 class="card-title">Resposta Rápida</h5>
-                            <p class="card-text">Atendimento ágil em situações de emergência para minimizar riscos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Resposta Rápida" />
-                        <div class="card-body">
-                            <h5 class="card-title">Escolta Velada</h5>
-                            <p class="card-text">Atendimento ágil em situações de emergência para minimizar riscos.</p>
-                        </div>
-                    </div>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content text-center" data-aos="fade-up">
+                    <img class="logo-placeholder mb-4" src="./src/assets/images/logo.png" alt="Logo DP Vigilância Patrimonial" width="120" />
+                    <h1 class="hero-title">DP Vigilância Patrimonial</h1>
+                    <p class="hero-description">Garantindo a segurança e tranquilidade do seu patrimônio com soluções personalizadas e equipe altamente qualificada.</p>
+                    <a href="https://wa.me/5519989497037" target="_blank" class="whatsapp-button">
+                        <i class="fa-brands fa-whatsapp icon"></i> Solicite um Orçamento
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="container py-5">
-            <div class="text-center mb-5">
-                <h2 style="color: #b6aa5e">Cases de Sucesso</h2>
-                <p class="card-text">Veja como ajudamos nossos clientes a garantir segurança e tranquilidade.</p>
-            </div>
+        <!-- Quem Somos -->
+        <section id="quem-somos" class="about-section">
+            <div class="container">
+                <div class="about-intro about-highlight" data-aos="fade-up">
+                    <h3 class="section-title">Nossa História</h3>
+                    <p>A DP Vigilância Patrimonial se destaca como referência em vigilância patrimonial, oferecendo soluções personalizadas que garantem a tranquilidade e proteção que nossos clientes merecem.</p>
+                </div>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Case 1" />
-                        <div class="card-body">
-                            <h5 class="card-title">Condomínio Village do Bosque</h5>
-                            <p class="card-text">Redução de 70% nos incidentes de segurança após a implementação de nossas soluções.</p>
+                <div class="about-highlight">
+                    <div class="container">
+                        <div class="about-highlight-content" data-aos="fade-right">
+                            <div class="about-highlight-text">
+                                <h3>Tradição em Segurança</h3>
+                                <p>A DP Vigilância Patrimonial é uma empresa dedicada e comprometida com a segurança patrimonial. Nossa equipe altamente qualificada trabalha com profissionalismo e eficiência para garantir a proteção do seu patrimônio, oferecendo soluções sob medida que atendem às necessidades específicas de cada cliente.</p>
+                            </div>
+                            <div class="about-highlight-image">
+                                <img src="./src/assets/images/equipe.jpg" alt="Equipe DP Vigilância Patrimonial" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Case 2" />
-                        <div class="card-body">
-                            <h5 class="card-title">Empresa Beta</h5>
-                            <p class="card-text">Proteção 24/7 com monitoramento avançado e equipe treinada.</p>
+
+                <div class="about-highlight">
+                    <div class="container">
+                        <div class="about-highlight-content reverse" data-aos="fade-left">
+                            <div class="about-highlight-text">
+                                <h3>Presença Regional</h3>
+                                <p>Nossa atuação se estende por toda a região, incluindo Aguaí, Mogi Guaçu, Mogi Mirim, Holambra e Estiva Gerbi. Construímos uma rede de proteção que garante atendimento ágil e eficiente onde quer que você esteja.</p>
+                            </div>
+                            <div class="about-highlight-image">
+                                <img src="./src/assets/images/condominio.jpg" alt="Cobertura Regional" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card services-card">
-                        <img src="./src//assets/images/condominio.jpg" alt="Case 3" />
-                        <div class="card-body">
-                            <h5 class="card-title">Residência Gama</h5>
-                            <p class="card-text">Segurança total para a residência de um cliente VIP, com monitoramento contínuo.</p>
+
+                <section class="stats-section" data-aos="fade-up">
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="stat-number">
+                                5+
+                                <i class="fas fa-city" style="font-size: 1.5rem; opacity: 0.7;"></i>
+                            </div>
+                            <p class="stat-label">Cidades Atendidas<br>na Região</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="stat-number">
+                                24/7
+                                <i class="fas fa-clock" style="font-size: 1.5rem; opacity: 0.7;"></i>
+                            </div>
+                            <p class="stat-label">Monitoramento<br>Ininterrupto</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-number">
+                                100%
+                                <i class="fas fa-check-circle" style="font-size: 1.5rem; opacity: 0.7;"></i>
+                            </div>
+                            <p class="stat-label">Clientes<br>Satisfeitos</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 style="color: #b6aa5e">Nossos Serviços</h2>
+                    <p class="card-text">Soluções completas em segurança e manutenção para sua empresa</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3 class="service-title">Portaria e Controle de Acesso</h3>
+                            <p class="service-description">Controle de entrada e saída de pessoas e veículos, recebimento de encomendas com controle interno, garantindo a segurança do perímetro.</p>
+                            <a href="#contato" class="learn-more">
+                                Saiba mais <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="service-title">Vigia Diurno e Noturno</h3>
+                            <p class="service-description">Monitoramento contínuo 24 horas ou conforme necessidade, para prevenir e detectar qualquer ameaça ou atividade suspeita.</p>
+                            <a href="#contato" class="learn-more">
+                                Saiba mais <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h3 class="service-title">Jardinagem</h3>
+                            <p class="service-description">Manutenção e embelezamento de áreas verdes para proporcionar um ambiente agradável, seguro e ainda mais valorizado.</p>
+                            <a href="#contato" class="learn-more">
+                                Saiba mais <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="service-title">Zeladoria</h3>
+                            <p class="service-description">Gestão e conservação de instalações em geral para garantir a ordem e a funcionalidade do ambiente.</p>
+                            <a href="#contato" class="learn-more">
+                                Saiba mais <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="text-center py-5 bg-dark text-white">
-            <h2 style="color: #b6aa5e">Solicite um Orçamento</h2>
-            <p>Entre em contato conosco para soluções de segurança personalizadas.</p>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-button"><i class="fa-brands fa-whatsapp icon"></i> Fale Conosco pelo WhatsApp</a>
+        <section id="beneficios" class="benefits-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 style="color: #b6aa5e">Benefícios da Terceirização</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="benefit-card">
+                            <div class="benefit-icon-wrapper">
+                                <i class="fas fa-chart-line benefit-icon"></i>
+                            </div>
+                            <h3 class="benefit-title">Redução de Custos</h3>
+                            <p class="benefit-text">
+                                Elimine gastos com recrutamento, treinamento e gestão de pessoal. Otimize seus recursos financeiros com nossa solução completa em segurança.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon-wrapper">
+                                <i class="fas fa-cogs benefit-icon"></i>
+                            </div>
+                            <h3 class="benefit-title">Otimização de Recursos</h3>
+                            <p class="benefit-text">
+                                Maximize a eficiência operacional com processos otimizados e equipe especializada, permitindo que você foque no core business da sua empresa.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon-wrapper">
+                                <i class="fas fa-shield-alt benefit-icon"></i>
+                            </div>
+                            <h3 class="benefit-title">Transferência de Responsabilidade</h3>
+                            <p class="benefit-text">
+                                Delegue as responsabilidades operacionais e jurídicas para nossa equipe especializada, garantindo conformidade e segurança para seu negócio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <footer>
-            <p>&copy; 2025 DP - Segurança e Vigilância Patrimonial. Todos os direitos reservados.</p>
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="contact-title" data-aos="fade-up">Entre em Contato</h2>
+                    <p class="contact-description" data-aos="fade-up" data-aos-delay="100">
+                        Estamos prontos para oferecer as melhores soluções em segurança para sua empresa.
+                        Fale conosco e descubra como podemos ajudar.
+                    </p>
+                    <a href="https://wa.me/5519989497037" target="_blank" class="contact-button" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale com um Especialista
+                    </a>
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-phone"></i>
+                            <span>(19) 98949-7037</span>
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-envelope"></i>
+                            <span>dpvigilanciapatrimonial@hotmail.com</span>
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mogi Mirim, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="./src/assets/images/logo.png" alt="Logo DP Vigilância Patrimonial">
+                        <p class="footer-logo-text">DP Vigilância Patrimonial</p>
+                    </div>
+                    <p class="footer-text"> 2024 DP Vigilância Patrimonial. Todos os direitos reservados.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/5519989497037" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:dpvigilanciapatrimonial@hotmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+5519989497037" title="Telefone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        </script>
+        <script>
+            // Adiciona classe ao navbar quando rolar a página
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
     </body>
 </html>
